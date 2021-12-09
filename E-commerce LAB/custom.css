@@ -1,0 +1,293 @@
+
+ .header {
+  height: 100px;
+  border-width: 1px;
+  border-style: solid;
+  background-color: yellow;
+  border-radius: 20px 0px 0px 0px;
+  justify-content: space-between;
+
+}
+
+
+.overlay-form {
+  position:absolute;
+  top:50vh;
+  left:0px;
+  width:100vw;
+  height:0vh;
+  background:rgba(0, 0, 0, 0.8);
+  z-index:-1;
+  opacity:0;
+  padding:80px 100px;
+  overflow:hidden;
+  box-sizing:border-box;
+  transition: top 500ms ease-in-out,
+  opacity 500ms ease-in-out,
+  height 0ms ease-in-out 500ms;  
+}
+.overlay-form .close-btn {
+  position:absolute;
+  top:20px;
+  right:40px;
+  color:#fff;
+  font-size:40px;
+  font-weight:600;
+  cursor:pointer;
+}
+.overlay-form h1 {
+  font-size:32px;
+  color:#fff;
+}
+.overlay-form p {
+  font-size:16px;
+  color:#eee;
+  margin:-15px 0px 30px;
+}
+.overlay-form .form-element {
+  margin:20px 0px;
+}
+.overlay-form label {
+  display:block;
+  font-size:17px;
+  color:#eee;
+  margin-bottom:5px;
+}
+.overlay-form input {
+  width:100%;
+  padding:10px;
+  font-size:17px;
+  border:2px solid #eee;
+  border-radius:5px;
+}
+.overlay-form button,
+.center button {
+  margin-top:10px;
+  width:100px;
+  height:35px;
+  font-size:15px;
+  text-transform:uppercase;
+  background:#fff;
+  color:#222;
+  border:none;
+  outline:none;
+  border-radius:10px;
+}
+
+.signup {
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 25px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.signup:hover {
+  background-color: #555555;
+  color: white;
+}
+
+body.activeForm .overlay-form {
+  z-index:2;
+  opacity:1;
+  top:0px;
+  height:100vh;
+  transition: top 500ms ease-in-out,
+              opacity 500ms ease-in-out,
+              height 0ms ease-in-out 0ms;
+}
+
+.animate{
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+.authentication{
+  padding: 25px;
+}
+
+.header__logo {
+  padding: 10px;
+}
+
+.header__title {
+  font-size: 28px;
+  font-family: Cassandra Personal Use;
+  font-style: italic; 
+  padding: 12px;
+}
+
+.bannerRibbon{
+ z-index: 1;
+ position: absolute;
+ margin: -90px;
+}
+
+
+
+.flex {
+  background-color: #FAB03E;
+  display: flex;
+}
+
+.searchbar {
+  margin-left: 550px;
+    overflow: hidden;
+ padding: 25px;
+}
+
+.socialMediaIcon {
+ padding: 10px 5px;
+}
+
+.socialMediaIcon:hover {
+ filter: hue-rotate(180deg);
+ -webkit-filter: hue-rotate(180deg);
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  padding: 12px 20px 12px 20px;
+}
+
+
+
+.sidebar {
+ background-color: #2e8b57;
+  width: 20%;
+  border-width: 1px;
+  border-style: solid;
+  overflow: auto;
+}
+
+.sidebar__category {
+  margin: 10px;
+ margin-top: 15px;
+ max-height: 5px;
+ background-color: white;
+ border-radius: 10px 0px 10px 0px;
+ padding: 15px 0px 30px 10px;
+ border: 1px solid;
+ display: block;
+}
+
+
+.sidebar__category:hover{
+ border-top: 3px solid red;
+ margin: 10px;
+ margin-top: 15px;
+ max-height: 5px;
+ border-radius: 10px 0px 10px 0px;
+ padding: 15px 0px 30px 10px;
+ display: block;
+}
+
+.sidebar__news {
+border-radius: 10px 10px 0px 0px;
+margin: 0px 10px ;
+ padding: 15px;
+background-color: white;
+text-align: center;
+border-bottom: 1px solid;
+}
+#sidebar__card {
+border-radius: 0px 0px 10px 0px;
+margin: 0px 10px 0px 10px;
+padding: 15px;
+overflow: auto;
+max-height: 100px;
+background-color: white;
+}
+
+#details {
+margin-left: 10px;
+}
+
+
+@keyframes example {
+  0%   { left:0px; top:0px;}
+  25%  { left:280px; top:0px;}
+50%  { left:0px; top:0px;}
+
+}
+.main {
+  background-color: #F58516;
+  width: 80%;
+  border-width: 1px;
+  border-style: solid;
+}
+
+
+.imgfile {
+  width:100%;
+  position: relative;
+ height: 100px;
+ display: inline-block;
+        
+    }
+
+ .imgfile .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;    
+    }
+
+  .imgfile:hover .img-top {
+    display: inline ;
+    }
+
+.main__box {
+ border: 2px solid;
+ background-color: white;
+ float:left;
+ margin: 5px 0px 10px 50px;
+ padding:20px;
+  width: 250px;
+  text-align: center;
+}
+
+.card-img {
+ margin: 0px;
+ padding: 0px;
+ transition: transform 0.2s;
+}
+
+.card-img:hover {
+ transform: scale(1.1);
+}
+
+
+.button {
+ background-color: rgb(165, 165, 212);
+ border: none;
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin-left: 0px;
+ margin-bottom: 2px;
+ cursor: pointer;
+}
+
+.footer {
+  background-color: orange;
+  height: 100px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0px 0px 20px 0px;
+}
